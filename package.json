@@ -14,7 +14,7 @@
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "watch:test": "npm t -- -w",
     "test": "mocha src/index.test.js --compilers js:babel-register",
-    "cover": "nyc npm t",
+    "cover": "nyc --reporter=lcov npm t",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
